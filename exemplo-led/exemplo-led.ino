@@ -19,6 +19,7 @@ void desligarLed(){
   // Funcao do Arduino para desligar o LED (colocar nivel baixo, ou seja, 0V)  
   digitalWrite(led, LOW);
 }
+
 // Funcao para configurar o Arduino
 void setup() {                
 
