@@ -10,7 +10,6 @@ Data:         19/03/2023
 // Porta digital no qual sera colocado um LED para ser ligado e desligado
 int led = 13;
 
-
 void ligarLed() {
   // Funcao do Arduino para ligar o LED (colocar nivel alto, ou seja, 5V)
   digitalWrite(led, HIGH);
@@ -20,7 +19,6 @@ void desligarLed(){
   // Funcao do Arduino para desligar o LED (colocar nivel baixo, ou seja, 0V)  
   digitalWrite(led, LOW);
 }
-
 
 // Funcao para configurar o Arduino
 void setup() {                
