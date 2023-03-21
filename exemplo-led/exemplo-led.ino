@@ -10,6 +10,10 @@ Data:         19/03/2023
 // Porta digital no qual sera colocado um LED para ser ligado e desligado
 int led = 13;
 
+void ligarLed() {
+  // Funcao do Arduino para ligar o LED (colocar nivel alto, ou seja, 5V)
+  digitalWrite(led, HIGH);
+}
 // Funcao para configurar o Arduino
 void setup() {                
 
@@ -19,8 +23,8 @@ void setup() {
 
 // Funcao principal do Arduino que ficara em loop infinito
 void loop() {
-  // Funcao do Arduino para ligar o LED (colocar nivel alto, ou seja, 5V)
-  digitalWrite(led, HIGH);
+  
+  ligarLed();
 
   // Funcao do Arduino para parar durante um certo tempo em milisegundos (ms)
   delay(1000); // 1 segundo
