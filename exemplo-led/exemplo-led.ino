@@ -13,7 +13,12 @@ int led = 13;
 void ligarLed() {
   // Funcao do Arduino para ligar o LED (colocar nivel alto, ou seja, 5V)
   digitalWrite(led, HIGH);
+
+void desligarLed(){
+  // Funcao do Arduino para desligar o LED (colocar nivel baixo, ou seja, 0V)  
+  digitalWrite(led, LOW);
 }
+
 // Funcao para configurar o Arduino
 void setup() {                
 
@@ -29,8 +34,7 @@ void loop() {
   // Funcao do Arduino para parar durante um certo tempo em milisegundos (ms)
   delay(1000); // 1 segundo
 
-  // Funcao do Arduino para desligar o LED (colocar nivel baixo, ou seja, 0V)  
-  digitalWrite(led, LOW);
+  desligarLed();
   
   // Funcao do Arduino para parar durante um certo tempo em milisegundos (ms)
   delay(1000); // 1 segundo
