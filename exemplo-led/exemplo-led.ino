@@ -10,6 +10,10 @@ Data:         19/03/2023
 // Porta digital no qual sera colocado um LED para ser ligado e desligado
 int led = 13;
 
+void desligarLed(){
+  // Funcao do Arduino para desligar o LED (colocar nivel baixo, ou seja, 0V)  
+  digitalWrite(led, LOW);
+}
 // Funcao para configurar o Arduino
 void setup() {                
 
@@ -25,8 +29,7 @@ void loop() {
   // Funcao do Arduino para parar durante um certo tempo em milisegundos (ms)
   delay(1000); // 1 segundo
 
-  // Funcao do Arduino para desligar o LED (colocar nivel baixo, ou seja, 0V)  
-  digitalWrite(led, LOW);
+  desligarLed();
   
   // Funcao do Arduino para parar durante um certo tempo em milisegundos (ms)
   delay(1000); // 1 segundo
